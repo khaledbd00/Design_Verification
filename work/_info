@@ -1,0 +1,114 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Khaled/OneDrive/Desktop/first_time_try
+vcounter
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1691984026
+!i10b 1
+!s100 o`5jDT3:IL_KRMz`AN;UY3
+IP:Xf2b?[TCU9EH6GAR]]>1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 counter_1_svp_unit
+S1
+R0
+w1691774825
+8./rtl/counter_1.svp
+F./rtl/counter_1.svp
+L0 32
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1691984026.000000
+Z6 !s107 .\tb\counter_test.sv|.\tb\counter_environment.sv|.\tb\counter_agent.sv|.\tb\counter_scoreboard.sv|.\tb\counter_monitor.sv|.\tb\counter_driver.sv|.\tb\counter_stimulus.sv|./tb_top.sv|./tb/tb_package.sv|./counter_interface.sv|./rtl/counter_1.svp|
+Z7 !s90 -reportprogress|300|-f|sim/file_list.f|-timescale|1ns/1ps|
+!i113 1
+Z8 o-timescale 1ns/1ps
+Z9 tCvgOpt 0
+Ycounter_interface
+R1
+R2
+!i10b 1
+!s100 [XH1a6mHP:NmlWTknWeZm2
+ID^ODO=6d1gzNcYb<G<nFm3
+R3
+!s105 counter_interface_sv_unit
+S1
+R0
+w1691950407
+8./counter_interface.sv
+F./counter_interface.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+Xtb_package
+!s115 counter_interface
+R1
+R2
+!i10b 1
+!s100 i?200mML^K985@LN1fC570
+IAmLYf<SX0TKob[OnOo1EU2
+VAmLYf<SX0TKob[OnOo1EU2
+S1
+R0
+w1691901763
+8./tb/tb_package.sv
+F./tb/tb_package.sv
+F.\tb\counter_stimulus.sv
+F.\tb\counter_driver.sv
+F.\tb\counter_monitor.sv
+F.\tb\counter_scoreboard.sv
+F.\tb\counter_agent.sv
+F.\tb\counter_environment.sv
+F.\tb\counter_test.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+vtb_top
+R1
+DXx4 work 10 tb_package 0 22 AmLYf<SX0TKob[OnOo1EU2
+R2
+!i10b 1
+!s100 KTBl;oc@IZa5Sn4=:Tle>2
+IM7<Xa;C1XzL@ak^?89Fin2
+R3
+!s105 tb_top_sv_unit
+S1
+R0
+w1691950423
+8./tb_top.sv
+F./tb_top.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9

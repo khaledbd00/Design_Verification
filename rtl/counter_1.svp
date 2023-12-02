@@ -1,0 +1,69 @@
+/*
+  UP-DOWN COUNTER Design Specification
+  
+///////////////////////////
+//    PIN DESCRIPTION    //
+///////////////////////////
+  
+--------------------------------------------------------------------------------------
+| SL | PIN NAMME | TYPE   |  DESCRIPTION                                             |
+|----|-----------|--------|----------------------------------------------------------|
+| 01 | clk       | Input  |  Input clk.                                              |
+|----|-----------|--------|----------------------------------------------------------| 
+| 02 | reset     | Input  |  Active High & Asynchronous Reset. Sets data_out = 0     |
+|----|-----------|--------|----------------------------------------------------------|  
+| 03 | data_in   | Input  |  16-bit input value of the counter.                      |
+|    |           |        |  Counter should start from this value.                   |
+|----|-----------|--------|----------------------------------------------------------|
+| 04 | data_out  | Output |  16-bit output value of counter.                         |
+|----|-----------|--------|----------------------------------------------------------|  
+| 05 | load      | Input  |  Loads data_in value to the counter when set to HIGH.    |
+|----|-----------|--------|----------------------------------------------------------|
+| 06 | up_down   | Input  |  Sets counter type.                                      |
+|    |           |        |  up_down = HIGH configures counter as up-counter.        |
+|    |           |        |  up_down = LOW  configures counter as down-counter       |
+|----|-----------|--------|----------------------------------------------------------|
+| 07 | enable    | Input  |  Starts counter, when set to HIGH.                       |
+--------------------------------------------------------------------------------------  
+*/
+
+`timescale 1ns/1ps
+
+module counter(
+  input [15:0] data_in,
+  input load,
+  input enable,
+  input up_down,
+  input clk,
+  input reset,
+  output wire [15:0] data_out
+);
+`pragma protect begin_protected
+`pragma protect version = 1
+`pragma protect encrypt_agent = "ModelSim" , encrypt_agent_info = "2020.1"
+`pragma protect key_keyowner = "Mentor Graphics Corporation" , key_keyname = "MGC-VERIF-SIM-RSA-2"
+`pragma protect key_method = "rsa"
+`pragma protect encoding = ( enctype = "base64" , line_length = 64 , bytes = 256 )
+`pragma protect key_block
+mpaVQJ62bi2YSy9M5VcWL7sd2lzgMo3eAvNxixzaQk228lhoupIG088152a6P1pX
+xe2/1bshWXMyN5xT1JzAMnYGcWnGD+N/yodVMt4eA9I6N4IY6Lwd5noFIJWs0e56
+PzvQ8KIi3EjZBECU8hzm9EHzv7lp39gk3hKX0b/i5leImnbYEceLT3tndjIQKvje
+Il/fNZg+1MjANTxHL14nX+x4ZpeXH0m1E2cMhqJTRZv8ZJkoTZH466zVwGtkasgz
+U3RUuiG03tCXxnsgopI/Gua0BwlUwZ2a+efYl/j65Ys0/rN2cWwuEX1eWDwPJ2kR
+dr89xpHIevsw9tjlQbnrlg==
+`pragma protect data_method = "aes128-cbc"
+`pragma protect encoding = ( enctype = "base64" , line_length = 64 , bytes = 528 )
+`pragma protect data_block
+lqEZ7BfUUHDo5mA24IccuMD9yJjxBh0IMG765YbUYIwu+x+8ZJgkmBxnOQpmlidw
+aHJTETwY1mLEmftwLRlow5rM3OvVKORISLB489RgesbhcJFDzuJjTGAIOxU3xJnA
+JeZlNeJEo7vnDLo6nmgyrp7mAlb3USkrjT7VvTEYwAfgbdDFOLx1vRckPXYUkWOE
+wPXyQetU4JWyqPofeGKm3LnESZsVzusD883Q9DoPOxbaV3BI0rp/4DkqmsgRuMkB
+o2tdb2E3yYvXzzY4p0TyE/TCK4y1DXgNFHwKH5s6MGnOW8C8gUXYiPA00MK4JwlV
+yu1YFIKGxoENJ0xRLj57abFhEosnNhKORnVVybW6S7jxFZF38Rs595dgZCc5j5bo
+ociALdcXWRObomUKQ16ympB62Z34vwW8QZ0/Q/IiMc2lGDxwRkZSR/pUWR5dxe6R
+DrrWLjGJu+khTZXrUAEuAh1UpLZ00gly17TdsbHR+CCZ+Q7JHS3PorTBdKt/xCIZ
+BBaaq7UumCyS4z9KP9KDVxt/9dbmVKpaJ2VYhAFA7qiPDbyKHeUQgv4ROQFe+sJf
+Ae0Kb9eMYmCISkRMKOcIVMN3eJjd6ZzrrQ/RwTMppvKQaUxAMdYhiOR6pOamxlTA
+Eo9OXi56EmVztoy66ZJtKLD643NKgU9oK1I919XQ3SCDu+axUf3Yg9BTV6Bpe7tZ
+`pragma protect end_protected
+endmodule
