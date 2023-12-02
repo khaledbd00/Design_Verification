@@ -1,4 +1,4 @@
-./rtl/counter_1.svp
+./rtl/counter.svp
 
 ./counter_interface.sv
 
